@@ -7,6 +7,7 @@ import {useNavigation} from "@react-navigation/native";
 import PageHeader from "../components/buttonedPageHeader";
 import Input from "../components/text-input";
 import MButton from "../components/button";
+import TimePicker from "../components/TimePicker";
 
 const ScheduleManager = () => {
 
@@ -25,6 +26,9 @@ const ScheduleManager = () => {
       <View>
       {/*Custom inputs accepts a label:string which is the text on it and the placeholder*/ }
         <Input label="Schedule Name"/>
+
+        {/* Time Picker*/}
+        <TimePicker />
 
         {/* The custom button accepts the text(Button text(string)) and onPress event handler*/}
         <MButton
